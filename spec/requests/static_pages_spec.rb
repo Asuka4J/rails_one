@@ -21,6 +21,12 @@ describe "Static pages" do
       visit '/static_pages/home'
       expect(page).to have_content('Sample App')
     end
+
+    #case 2
+    it "标题测试" do
+    	visit '/static_pages/home'
+    	expect(page).to hava_title('Jiaqing.me | HOME')
+    end
   end
 
   describe "Help page" do
