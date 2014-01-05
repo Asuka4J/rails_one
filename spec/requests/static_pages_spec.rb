@@ -25,7 +25,7 @@ describe "Static pages" do
     #case 2
     it "标题测试" do
     	visit '/static_pages/home'
-    	expect(page).to have_title('Jiaqing.me | HOME')
+    	expect(page).not_to have_title('| HOME')
     end
   end
 
